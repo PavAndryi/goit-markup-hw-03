@@ -47,11 +47,10 @@ ul {
   padding: 0;
 }
 
-h2 {
-  margin: 0;
-  padding: 0;
-}
-
+h1,
+h2,
+h3,
+h4,
 p {
   margin: 0;
   padding: 0;
@@ -166,8 +165,6 @@ p {
 }
 
 .hero-title {
-  padding: 0;
-  margin-top: 0;
   margin-bottom: 30px;
 
   font-weight: 900;
@@ -220,8 +217,6 @@ p {
 }
 
 .section-title {
-  margin: 0;
-  padding: 0;
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -232,9 +227,6 @@ p {
 }
 
 .section-text {
-  margin-bottom: 0;
-  padding: 0;
-
   color: var(--primary-text-color);
 }
 
@@ -284,8 +276,11 @@ p {
   border-radius: 0px 0px 4px 4px;
 }
 
+.wrap-team {
+  padding: 30px 34px;
+}
+
 .team-title {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -295,10 +290,6 @@ p {
 }
 
 .team-text {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 30px;
-
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -406,8 +397,11 @@ p {
   margin-top: 30px;
 }
 
+.wrap-portfolio {
+  padding: 20px 24px;
+}
 .title-portfolio {
-  margin: 20px 24px 4px 24px;
+  margin-bottom: 4px;
 
   color: var(--secondary-bg-color);
 
@@ -418,7 +412,6 @@ p {
 }
 
 .portfolio-text {
-  margin: 0 24px 20px 24px;
   color: var(--primary-text-color);
 
   font-size: 16px;
