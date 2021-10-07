@@ -56,18 +56,21 @@ p {
   padding: 0;
 }
 
-.no-padding {
-  padding-top: 0;
-  padding-bottom: 0;
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-.container {
-  width: 1170px;
-  margin: 0 auto;
+.section {
+  padding: 94px 0;
 }
 /*----------------------------------------------------------*/
 /*--------------------------HEADER--------------------------*/
 /*----------------------------------------------------------*/
+.header {
+  border-bottom: 1px solid #ececec;
+}
 /* ЛОГОТИП */
 .page-nav {
   display: flex;
@@ -158,14 +161,14 @@ p {
   border: transparent;
   text-align: center;
   padding-top: 200px;
-  padding-bottom: 280px;
-  margin-bottom: 94px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
   margin-bottom: 30px;
 
   font-weight: 900;
+  line-height: 1.36;
   font-size: 44px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -193,10 +196,6 @@ p {
 }
 
 /* ---ОСОБЛИВОСТІ---*/
-.section {
-  margin-bottom: 94px;
-}
-
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -205,16 +204,15 @@ p {
   margin: -1px;
 }
 
-.section-list {
+.features-list {
   display: flex;
-  justify-content: center;
 }
 
-.section-list .section-item:not(:last-child) {
+.features-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.section-title {
+.features-title {
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -223,13 +221,13 @@ p {
   color: var(--secondary-bg-color);
 }
 
-.section-text {
+.features-text {
   color: var(--primary-text-color);
 }
 
 /*---ЧИМ МИ ЗАЙМАЄМСЯ---*/
 .work-section {
-  margin-bottom: 94px;
+  padding-top: 0;
 }
 
 .work-list {
@@ -238,6 +236,10 @@ p {
 }
 
 /*---НАША КОМАНДА---*/
+.section-team {
+  background: #f5f4fa;
+}
+
 .work-title {
   margin-bottom: 35px;
 
@@ -247,12 +249,6 @@ p {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-}
-
-.section-team {
-  background: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 99px;
 }
 
 .team-list {
@@ -274,7 +270,7 @@ p {
 }
 
 .wrap-team {
-  padding: 30px 34px;
+  padding: 30px 0;
 }
 
 .team-title {
@@ -294,8 +290,10 @@ p {
 }
 
 /* ----------------------FOOTER-------------------*/
-.footer-color {
+.footer {
   padding: 60px 0;
+
+  background-color: var(--banner-color);
 }
 
 .logo-footer {
@@ -345,13 +343,9 @@ p {
 /* -------------------PORTFOLIO--------------------*/
 /*-------------------------------------------------*/
 /*----- MAIТN-------------------------------------*/
-.section-portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .filters-list-button {
   display: flex;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 
@@ -416,8 +410,3 @@ p {
 }
 
 /*---FOOTER--------------------------------------*/
-.footer-color {
-  background-color: var(--banner-color);
-  color: var(--white-color);
-  border: transparent;
-}
